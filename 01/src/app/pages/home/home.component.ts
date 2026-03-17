@@ -1,8 +1,10 @@
 import { Component, signal } from "@angular/core";
+import { RouterLink } from "@angular/router";
 
 @Component({
   selector: 'home-app',
   standalone: true,
+  imports: [RouterLink],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css'],
 })
@@ -15,7 +17,7 @@ export class HomeComponent {
   }
   
   decrease() {
-    this.count.update(d => d + 1);
+    this.count.update(d => d - 1);
   }
   
   reset() {

@@ -1,3 +1,30 @@
 /* You can add global styles to this file, and also import other style files */
 
 @import "tailwindcss";
+
+h1 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: #1a1a2e;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  color: #4a5568;
+  margin-bottom: 1rem;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: white;
+  border: none;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  margin: 1px;
+}
+
+button:hover {
+  background: #2c5282;
+}

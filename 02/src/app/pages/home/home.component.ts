@@ -9,4 +9,8 @@ import { RouterLink } from "@angular/router";
   styleUrls: ['./home.component.css']
 })
 
-export class HomeComponent{}
+export class HomeComponent{
+  clicked() {
+    console.log("Button clicked")
+  }
+}

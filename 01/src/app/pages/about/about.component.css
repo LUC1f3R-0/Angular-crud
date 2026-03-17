@@ -1,3 +1,9 @@
 button{
-    background: #3182ce;
+  color: white;
+  background: #3182ce;
+}
+
+input{
+  border: 1px solid #000;
+  /*color: back;*/
 }

@@ -1,4 +1,4 @@
-import { Component, Input } from "@angular/core";
+import { Component, Input, signal } from "@angular/core";
 
 @Component({
   selector: 'app-card',
@@ -11,4 +11,11 @@ export class CardComponent {
   @Input() description = '';
   @Input() linkText = 'Read more';
   @Input() link = '#';
+  @Input() console = '';
+
+  showExtra = signal(false);
+  
+  clicked() {
+    this.showExtra.update(c => !c);
+  }
 }
